@@ -2,49 +2,9 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: consolas;
+    font-family: Trebuchet MS;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    background: grey;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .box{
-    position: relative;
-    width: 400px;
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-}
-.container .box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 100%;
-    background: linear-gradient(white,white,grey);
-    filter: blur(1px);
-    z-index: 1;
-}
-.container .box::after{
-    content: '';
-    position: absolute;
-    top: 1;
-    right: -1px;
-    width: 25px;
-    height: 100%;
-    background: linear-gradient(white,white,black);
-    filter: blur(1px);
-    z-index: 1;
+
+.main{
+    margin: 5%;
 }
