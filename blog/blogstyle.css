@@ -30,9 +30,9 @@ body {
     height: 500px; 
     margin-top: 5rem;
     transition: all 0.2s ease;
-    border: 1rem solid rgb(255, 255, 255);
+    border: 0.5rem solid rgb(255, 255, 255);
 }
 .bloglogo:hover{
   transform: scale(1.05);
-  border: 1rem solid #fee84c;
+  border: 0.5rem solid #fee84c;
 }

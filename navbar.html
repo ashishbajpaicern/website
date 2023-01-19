@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <style>
+      * {
+        font-family: Trebuchet MS;
+        font-weight: 1000;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      body {
+        background: #1e1f25;
+      }
+      ul {
+        display: flex;
+        margin-left: 35rem;
+        height: 5vh;
+        margin-top: 2rem;
+        width: 10%;
+        justify-content: space-between;
+        text-align: center;
+      }
+      li {
+        padding: 1rem 2rem 1.15rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #ebebeb;
+        min-width: 80px;
+        margin: auto;
+        border: white 5px solid;
+      }
+
+      li:hover {
+        background-color: #fee84c;
+        color: #27262c;
+        animation: spring 300ms ease-out;
+        text-shadow: 0 -1px 0 #ef816c;
+        font-weight: bold;
+      }
+      li:active {
+        transform: translateY(4px);
+      }
+
+      @keyframes spring {
+        15% {
+          -webkit-transform-origin: center center;
+          -webkit-transform: scale(1.2, 1.1);
+        }
+        40% {
+          -webkit-transform-origin: center center;
+          -webkit-transform: scale(0.95, 0.95);
+        }
+        75% {
+          -webkit-transform-origin: center center;
+          -webkit-transform: scale(1.05, 1);
+        }
+        100% {
+          -webkit-transform-origin: center center;
+          -webkit-transform: scale(1, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <a href="/index.html"><li>Home</li></a>
+      <a href="/blog/blogindex.html"> <li>Blogs</li></a>
+      <a href="/comingsoon.html"> <li>About</li></a>
+      <a href="/comingsoon.html"> <li>Projects</li></a>
+      <a href="/contact.html"><li>Contact</li></a>
+    </ul>
+  </body>
+</html>

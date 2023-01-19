@@ -16,6 +16,8 @@
       </center>
     </header>
 
+    <div id="header"></div>
+
     <div class="box">
       <a
         href="https://medium.com/@ashishbajpaicern/a-i-is-it-the-automation-of-doom-d0b775d69e01"
@@ -26,5 +28,18 @@
     <div class="box">
       <img class="bloglogo" src="blogImages\ailogo.jpg" alt="" />
     </div>
+
+    <script>
+      // Get the container element where you want to add the navigation bar
+      var header = document.getElementById("header");
+
+      // Fetch the HTML code for the navigation bar
+      fetch("/navbar.html")
+        .then((response) => response.text())
+        .then((navbarHTML) => {
+          // Add the HTML code for the navigation bar to the container element
+          header.innerHTML = navbarHTML;
+        });
+    </script>
   </body>
 </html>
