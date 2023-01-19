@@ -223,3 +223,15 @@
     text-decoration: none;
     
   }
+  #image {
+    padding-top: 2rem;
+    width: 50%;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    margin-top: 20vh;
+}
+
+#image:hover {
+    content: url("/logo/logoafter.png");
+    transform: scale(1.1);
+  }
